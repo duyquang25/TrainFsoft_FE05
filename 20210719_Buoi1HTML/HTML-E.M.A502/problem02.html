@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media/embedding: Task 2</title>
+    <style>
+        body{
+            background-color: #fff;
+            color: #333;
+            font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        video{
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Video embed</h1>
+
+    <video width="320" height="240" controls muted>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Your browser does not support the video tag.
+        <track label="English" kind="subtitles" srclang="en" src="subtitles-en.vtt" default>
+    </video>
+
+    
+
+</body>
+</html>
