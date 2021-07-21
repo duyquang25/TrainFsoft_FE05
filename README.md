@@ -1,4 +1,5 @@
-# [TrainingFsoft_FE05](https://duyquang25.github.io/TrainFsoft_FE05/)
+# TrainingFsoft_FE05
+- [Link Page](https://duyquang25.github.io/TrainFsoft_FE05/)
 
 # 20210719_buoi1HTML
 
