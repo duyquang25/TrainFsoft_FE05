@@ -3,7 +3,7 @@
 # 20210719_buoi1HTML
 
  - [HTML Element](https://duyquang25.github.io/TrainFsoft_FE05/20210719_Buoi1HTML/HTML-E.S.A101%20(HTML_Elements)/index.html)
- - [Debugging HTML](https://duyquang25.github.io/TrainFsoft_FE05/20210719_Buoi1HTML/HTML-E.S.A201%20(Debugging%20HTML)/HTML-E.S.A201%20(Debugging HTML).html)
+ - [Debugging HTML](https://duyquang25.github.io/TrainFsoft_FE05/20210719_Buoi1HTML/HTML-E.S.A201%20(Debugging%20HTML)/HTML-E.S.A201%20(Debugging%20HTML).html)
  - [HTML Text P1](https://duyquang25.github.io/TrainFsoft_FE05/20210719_Buoi1HTML/HTML-E.S.A301_(HTML_Text)/Source_Code/HTML-E.S.A301/problem1.html)
  - [HTML Text P2](https://duyquang25.github.io/TrainFsoft_FE05/20210719_Buoi1HTML/HTML-E.S.A301_(HTML_Text)/Source_Code/HTML-E.S.A301/problem2.html)
  - [HTML Text P3](https://duyquang25.github.io/TrainFsoft_FE05/20210719_Buoi1HTML/HTML-E.S.A301_(HTML_Text)/Source_Code/HTML-E.S.A301/problem3.html)
