@@ -76,3 +76,28 @@ p {
     display: block;
     margin: 5px;
   }
+
+  a:link {
+    color: orange;
+  }
+
+  a:visited {
+    color: green;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
+  .container > :first-child{
+    font-size: 150%;
+  }
+
+  .container p:first-child:first-line{
+    color: red;
+  }
+
+  table tr:nth-child(even){
+    background-color: #333;
+    color: #fff;
+  }

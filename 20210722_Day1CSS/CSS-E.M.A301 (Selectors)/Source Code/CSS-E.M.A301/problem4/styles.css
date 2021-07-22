@@ -76,3 +76,12 @@ p {
     display: block;
     margin: 5px;
   }
+
+  h2 + p {
+    color: red;
+  }
+
+  ul.list > li {
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }

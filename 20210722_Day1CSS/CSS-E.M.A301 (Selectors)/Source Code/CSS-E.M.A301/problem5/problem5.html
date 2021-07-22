@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
   <title>Selectors: attribute selectors</title>
 
   <style>
@@ -25,13 +26,29 @@
     }
 
     a {
+      text-align: left;
       display: block;
-      padding: 0.5em;
+      padding: 0.5em 13em;
     }
 
     a {
-      border: 5px solid grey;
+      border: 5px;
+      border-style: solid;
     }
+
+    a[href^="https"]{
+      border-color: green;
+    }
+    
+
+    a[href*="contact"]{
+      border-color: orange;
+    }
+
+    a[title] {
+      border-color: pink;
+    }
+
   </style>
 </head>
 

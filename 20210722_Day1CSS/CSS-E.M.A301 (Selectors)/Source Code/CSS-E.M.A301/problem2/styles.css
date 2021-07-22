@@ -76,3 +76,19 @@ p {
     display: block;
     margin: 5px;
   }
+
+  #special {
+    background-color: yellow;
+  }
+
+  .alert {
+    border: 1px solid grey;
+  }
+
+  .alert.stop {
+    background-color: red;
+  }
+
+  .alert.go {
+    background-color: green;
+  }
