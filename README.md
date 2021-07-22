@@ -27,5 +27,6 @@
  # 20210722_Day1CSS
 
 - [CSS Overview](https://duyquang25.github.io/TrainFsoft_FE05/20210722_Day1CSS/CSS-E.M.A101%20(CSS%20Overview)/Source%20Code/CSS-E.M.A101/problem1/problem1.html)
+- [CSS Cascade & Inheritance](https://duyquang25.github.io/TrainFsoft_FE05/20210722_Day1CSS/CSS-E.M.A201(Cascade&Inheritance)/CSS-E.M.A201/problem1/problem1.html)
 
  
