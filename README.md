@@ -36,10 +36,13 @@
 
 # 20210723_Day2CSS
 
-- [CSS Box Model](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A401%20(Box%20Model)/CSS-E.M.A401/problem1/problem1.html)
-- [CSS Box Model](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A401%20(Box%20Model)/CSS-E.M.A401/problem2/problem2.html)
-- [CSS Box Model](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A401%20(Box%20Model)/CSS-E.M.A401/problem3/problem3.html)
-- [CSS Overflow Contents](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A501%20(Overflow%20Contents)/CSS-E.M.A501/problem1/problem1.html)
-- [CSS Overflow Contents](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A501%20(Overflow%20Contents)/CSS-E.M.A501/problem2/problem2.html)
+- [CSS Box Model P1](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A401%20(Box%20Model)/CSS-E.M.A401/problem1/problem1.html)
+- [CSS Box Model P2](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A401%20(Box%20Model)/CSS-E.M.A401/problem2/problem2.html)
+- [CSS Box Model P3](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A401%20(Box%20Model)/CSS-E.M.A401/problem3/problem3.html)
+- [CSS Overflow Contents P1](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A501%20(Overflow%20Contents)/CSS-E.M.A501/problem1/problem1.html)
+- [CSS Overflow Contents P2](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A501%20(Overflow%20Contents)/CSS-E.M.A501/problem2/problem2.html)
+- [CSS Values and Units P1](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A601%20(Values%20and%20Units)/CSS-E.M.A601/problem1/problem1.html)
+- [CSS Values and Units P2](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A601%20(Values%20and%20Units)/CSS-E.M.A601/problem2/problem2.html)
+- [CSS Values and Units P3](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A601%20(Values%20and%20Units)/CSS-E.M.A601/problem3/problem3.html)
 
  
