@@ -9,6 +9,7 @@ body {
     font-family: "Open Sans";
     margin: 0;
     padding: 0;
+    line-height: 1.5;
     background-color: rgba(204, 204, 204,0.3);
 }
 
@@ -127,8 +128,8 @@ header h6 span {
 
 .container-grid{
     display: grid;
+    padding: 8px 16px;
     grid-template-columns: 66.66% 33.33%;
-    grid-gap: 32px;
 }
 
 .container-blog{
@@ -138,7 +139,6 @@ header h6 span {
 .container-entry {
     padding: 12px 24px;
     background-color: #fff;
-    border: 15px solid rgba(204, 204, 204,0.3);
 }
 .entry-title{
     text-align: center;
@@ -196,3 +196,236 @@ header h6 span {
     display: table;
     clear: both;
 }
+
+.entry-comment {
+    margin-bottom: 16px;
+    text-align: justify !important;
+}
+
+.entry-comment:before, 
+.entry-comment:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.entry-comment .avt-cmt {
+    width: 20%;
+    float: left;
+}
+.entry-comment hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    opacity: 0.6;
+}
+.entry-comment .avt-cmt img{
+    width: 90px;
+}
+.entry-comment .content-cmt {
+    float: left;
+    text-align: justify;
+}
+.entry-comment .content-cmt h4 {
+    margin: 25px 0;
+    font-size: 20px;
+}
+.entry-comment .content-cmt h4 span{
+    font-size: 15px;
+    opacity: 0.6;
+}
+.entry-comment .content-cmt p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+/* End Blog Entries */
+
+/* About page */
+
+.card,
+.posts,
+.advertise,
+.tags,
+.inspiration{
+    margin : 16px;
+}
+
+.blog-about {
+    float: left;
+}
+
+
+.card img{
+    width : 100%;
+    vertical-align: middle;
+}
+
+.card .card-content{
+    padding: 0.01em 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.posts .posts-header {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+.posts .posts-header h4{
+   font-size: 20px;
+   margin: 10px 0;
+}
+
+.posts ul{
+    margin: 0;
+    padding: 0;
+    color : #000;
+    background-color: #fff;
+}
+
+.posts ul li{
+    list-style: none;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.posts ul li img{
+    height:auto;
+    margin-right: 16px;
+    float: left;
+    width: 50px;
+}
+
+.posts ul li span.large-font{
+    font-size: 20px;
+}
+
+
+.advertise .advertise-header {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.advertise .advertise-header h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.advertise .ads-content::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.advertise .ads-content {
+    padding: 0.01em 16px;
+   background-color: #fff;
+}
+
+.advertise .ads-content .content {
+    background-color: #f1f1f1!important;
+    height: 200px;
+    padding: 0.01em 16px;
+    margin: 16px 0px;
+    color: #000;
+    position: relative;
+}
+.advertise .ads-content .content span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+}
+
+
+.tags .tags-header {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.tags .tags-header h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.tags .tags-content::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tags .tags-content {
+    padding: 0.01em 16px;
+   background-color: #fff;
+   color: #000;
+}
+
+.tags .tags-content p span{
+    color: #000!important;
+    margin-bottom: 16px!important;
+    font-size: 12px;
+    background-color: #f1f1f1!important;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+.tags .tags-content p span.special{
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+
+
+
+.inspiration .inspiration-header {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.inspiration .inspiration-header h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.inspiration .inspiration-content::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* .inspiration .inspiration-content {
+    padding: 0 8px;
+    background-color: #fff;
+    color: #000;
+}
+.inspiration .inspiration-content .col{
+    padding: 0 8px;
+    width: 49.99%;
+    float: left;
+}
+.inspiration .inspiration-content .col p img{
+    width: 100%;
+} */
+
+.inspiration .inspiration-content .col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.inspiration .inspiration-content .col img{
+    width: 75%;
+    gap: 30px;
+}
+
+
+
+
+
