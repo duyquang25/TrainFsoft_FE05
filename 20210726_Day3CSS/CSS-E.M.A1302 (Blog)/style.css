@@ -1,3 +1,7 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Oswald"
 }
@@ -5,6 +9,7 @@ body {
     font-family: "Open Sans";
     margin: 0;
     padding: 0;
+    background-color: rgba(204, 204, 204,0.3);
 }
 
 /* Nav bar with list social media icon */
@@ -38,6 +43,13 @@ body {
     float: right !important;
 }
 
+/* Header Intro */
+
+.content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 .container {
     max-width: 1600px;
     padding: 48px 16px;
@@ -63,6 +75,9 @@ header h6 span {
     background-color: black;
 }
 
+
+/* Header-Img */
+
 .container-img{
     position: relative;
 }
@@ -84,22 +99,100 @@ header h6 span {
 
 .container-img .header-div h1,
 .container-img .header-div h3{
+    font-size: 36px;
     margin: 10px 0;
+    letter-spacing: 4px;
 }
 
 .container-img .header-div .text-special{
-    font-size: 56px;
+    font-size: 64px;
     font-weight: bold;
     margin: 0;
 }
 
 .container-img .header-div h2 button{
-    padding: 10px 15px;
+    padding: 12px 24px;
     color: #000;
     background-color: white;
-    font-weight: bold;
+    font-size: 18px;
+    font-family: Oswald;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* End Header-img */
+
+
+/* Grid */
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 66.66% 33.33%;
+    grid-gap: 32px;
+}
+
+.container-blog{
+    margin: 16px;
+}
+
+.container-entry {
+    padding: 12px 24px;
+    background-color: #fff;
+    border: 15px solid rgba(204, 204, 204,0.3);
+}
+.entry-title{
+    text-align: center;
+}
+
+.entry-title h3 {
+    font-size: 24px !important;
+}
+
+.entry-title h5 {
+    font-size: 18px !important;
+}
+
+.entry-title h3,
+.entry-title h5 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.entry-title span{
     opacity: 0.6;
 }
 
+.entry-content img {
+    width: 100%;
+    padding: 16px 0;
+}
 
+.entry-content p {
+    text-align: justify;
+}
 
+.entry-content p button.btn-entry-left{
+    float: left;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.entry-content p button.btn-entry-right{
+    float: right;
+    padding: 8px 16px;
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+}
+.entry-content p button.btn-entry-right span{
+    background-color: #fff;
+    color: #000;
+    padding: 0 8px;
+}
+.entry-content p::after{
+    content: "";
+    display: table;
+    clear: both;
+}
