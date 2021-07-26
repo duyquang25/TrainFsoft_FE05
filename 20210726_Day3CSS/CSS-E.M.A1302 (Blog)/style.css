@@ -1,0 +1,105 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald"
+}
+body {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav bar with list social media icon */
+
+.list-items {
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.items__icon {
+    color: white;
+    padding: 10px;
+    float: left;
+    padding: 8px 16px;
+    outline : 0;
+    display: block;
+}
+
+.items__button{
+    display: block;
+}
+
+.items__button:hover{
+    color: #ccc;
+    background-color: #000;
+}
+
+
+.items--right{
+    float: right !important;
+}
+
+.container {
+    max-width: 1600px;
+    padding: 48px 16px;
+    background-color: #fff;   
+    text-align: center;
+}
+
+.container h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.container h6{
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header h6 span {
+    padding: 0 8px;
+    color: white;
+    background-color: black;
+}
+
+.container-img{
+    position: relative;
+}
+
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-div{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    color: white;
+    margin: 20px;
+}
+
+.container-img .header-div h1,
+.container-img .header-div h3{
+    margin: 10px 0;
+}
+
+.container-img .header-div .text-special{
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.container-img .header-div h2 button{
+    padding: 10px 15px;
+    color: #000;
+    background-color: white;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+
+
