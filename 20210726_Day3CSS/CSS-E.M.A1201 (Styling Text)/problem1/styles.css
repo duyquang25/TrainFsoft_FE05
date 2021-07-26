@@ -1,0 +1,192 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html,
+body {
+font-size: 10px;
+line-height: 3rem;
+letter-spacing: 0.3rem;
+word-spacing: 0.3rem;
+}
+
+@font-face {
+font-family: 'josefinslab-bold';
+src: url('fonts/josefinslab-bold-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Lovato-Light';
+src: url('fonts/Lovato-Light-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+h1 {
+font-size: 6rem;
+}
+
+h2 {
+font-size: 3rem;
+}
+
+h1,
+h2 {
+font-family: 'josefinslab-bold', sans-serif;
+line-height: 1.2;
+}
+
+section h2+p {
+text-indent: 2rem;
+}
+
+p {
+font-family: 'Lovato-Light', sans-serif;
+font-kerning: normal;
+line-height: 1.8;
+font-size: 1.6rem;
+}
+
+
+a {
+outline: none;
+text-decoration: underline;
+}
+
+a:link {
+color: rgb(170, 102, 102);
+}
+
+a:visited {
+color: rgb(170, 102, 102);
+}
+
+a:focus {
+color: rgb(170, 102, 102);
+}
+
+a:hover {
+background-color: rgb(219, 157, 157);
+text-decoration: none;
+color: rgb(170, 102, 102);
+}
+
+a:active {
+color: rgb(219, 157, 157);
+}
+
+a[href*="http"] {
+background: url('https://png.icons8.com/external-link/win8/26') 100% 0% no-repeat;
+background-size: 1.3rem;
+padding-right: 1.8rem;
+}
+
+li {
+font-family: 'Lovato-Light', sans-serif;
+font-kerning: normal;
+line-height: 1.8;
+font-size: 1.6rem;
+list-style-type: square;
+}
+
+aside p>a {
+outline: none;
+text-decoration: none;
+display: inline-block;
+/* margin-left: 7.625%; */
+text-align: center;
+line-height: 3;
+background: rgb(170, 142, 142);
+padding: 0 1.2rem;
+border-radius: 1rem;
+width: 58%;
+}
+
+aside p>a:hover {
+color: white;
+}
+
+nav ul {
+padding: 0;
+width: auto;
+}
+
+nav ul li {
+display: block;
+}
+
+nav ul li a {
+outline: none;
+text-decoration: none;
+display: block;
+text-align: center;
+border: 1px solid;
+padding: 2rem 0;
+margin: 2rem 0;
+line-height: 4;
+}
+
+nav ul li:first-child {
+margin-top: 0;
+}
+
+nav ul li:last-child {
+margin-bottom: 0;
+}
+
+ol {
+margin: inherit 0;
+}
+
+ol li {
+list-style-type: lower-alpha;
+}
