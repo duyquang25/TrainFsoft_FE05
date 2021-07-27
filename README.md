@@ -52,7 +52,7 @@
 - [CSS Sizing item P3](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A701%20(Sizing%20Item)/problem3/problem3.html)
  
 - [CSS Background P1](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A801/problem1/problem1.html)
-- [CSS Background P2](https://duyquang25.github.io/TrainFsoft_FE0520210726_Day3CSS/CSS-E.M.A801/problem2/problem2.html)
+- [CSS Background P2](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A801/problem2/problem2.html)
 
 - [CSS Styling Images](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1001/problem1/problem1.html)
 - [CSS Styling Images](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1001/problem2/problem2.html)
