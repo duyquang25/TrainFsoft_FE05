@@ -45,4 +45,14 @@
 - [CSS Values and Units P2](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A601%20(Values%20and%20Units)/CSS-E.M.A601/problem2/problem2.html)
 - [CSS Values and Units P3](https://duyquang25.github.io/TrainFsoft_FE05/20210723_Day2CSS/CSS-E.M.A601%20(Values%20and%20Units)/CSS-E.M.A601/problem3/problem3.html)
 
+# 20210726_Day3CSS
+
+- [CSS Sizing item P1](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A701%20(Sizing%20Item)/problem1/problem1.html)
+- [CSS Sizing item P2](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A701%20(Sizing%20Item)/problem2/problem2.html)
+- [CSS Sizing item P3](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A701%20(Sizing%20Item)/problem3/problem3.html)
  
+- [CSS Background P1](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A801/problem1/problem1.html)
+- [CSS Background P2](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A801/problem2/problem2.html)
+
+- [CSS Styling Images](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1001/problem1/problem1.html)
+- [CSS Styling Images](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1001/problem2/problem2.html)
