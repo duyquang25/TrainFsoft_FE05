@@ -64,6 +64,6 @@
 - [CSS Layout P3](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1301%20(CSS%20Layout)/problem3/problem3.html)
 
 - [CSS Blog](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1302%20(Blog)/index.html)
-- [CSS Landing page](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1302%20(Landing%20Page)/index.html)
+- [CSS Landing page](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1303%20(Landing%20Page)/index.html)
 - [CSS House Design](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1304%20(House%20Design)/index.html)
 - [CSS BlTrevel Agency](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1305%20(Travel%20Agency)/index.html)
