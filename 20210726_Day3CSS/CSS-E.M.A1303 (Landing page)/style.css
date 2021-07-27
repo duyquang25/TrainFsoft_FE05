@@ -1,5 +1,5 @@
 *, *:before, *:after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html, body {
@@ -145,20 +145,23 @@ header a{
     float: left;
     width: 100%;
 }
-.section-app .app .app-content-right{
+/* .section-app .app .app-content{
     padding: 0 8px;
-    float: right!important;
+    float: left;
     width: 100%;
-}
+} */
 
 @media (min-width: 601px){
     .section-app .app .app-content {
-        width: 49.99999% !important;
-    }
-    .section-app .app .app-content-right {
-        width: 49.99999% !important;
+        width: 47.99999% !important;
     }
 }
+
+
+.section-app .app .app-content .img-right{
+    float: right!important;
+} 
+
 
 .section-app .app .app-content h1{
     font-size: 64px;
@@ -187,11 +190,225 @@ header a{
     color: blue!important;
 }
 
-.section-app .app .app-content-right img{
+.section-app .app .app-content img{
     max-width: 100%;
     height: auto;
 }
 
+.section-app .app::before,
+.section-app .app::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* app1 */
+
+
+.section-app1 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+.section-app1 .app1 {
+    padding: 0 8px;
+}
+.section-app1 .app1 .app1-content{
+    padding: 0 8px;
+    float: left;
+    width: 100%;
+}
+/* .section-app1 .app1 .app1-content{
+    padding: 0 8px;
+    float: left;
+    width: 100%;
+} */
+
+@media (min-width: 601px){
+    .section-app1 .app1 .app1-content {
+        width: 47.99999% !important;
+    }
+}
+
+
+.section-app1 .app1 .app1-content .img-right{
+    float: right!important;
+} 
+
+
+.section-app1 .app1 .app1-content h1{
+    font-size: 64px;
+    margin: 10px 0;
+}
+.section-app1 .app1 .app1-content h1.red{
+    font-size: 48px!important;
+    color: red!important;
+    margin: 10px 0;
+}
+.section-app1 .app1 .app1-content p span{
+    font-size: 24px!important;
+}
+.section-app1 .app1 .app1-content button{
+    color: #000;
+    background-color: #f1f1f1;
+    padding: 12px 24px;
+    margin: 16px 0;
+    border: none;
+    font-size: 16px;
+}
+.section-app1 .app1 .app1-content p i.text-green{
+    color: green!important;
+}
+.section-app1 .app1 .app1-content p i.text-blue{
+    color: blue!important;
+}
+
+.section-app1 .app1 .app1-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-app1 .app1::before,
+.section-app1 .app1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Futures */
+
+.future{
+    text-align: center;
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+    color: #fff!important;
+    background-color: #616161!important;
+    padding: 0.01em 16px;
+}
+
+.future::before,
+.future::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.future h1 b{
+    font-size: 64px!important;
+}
+.future .row .col-3 i{
+    font-size: 64px!important;
+}
+
+.future .col-3{
+    float: left;
+    width: 24.99%;
+}
+
+
+/* Pricing */
+
+.pricing {
+    color: #000!important;
+    background-color: #fff!important;
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+    text-align: center;
+}
+.pricing::before,
+.pricing::after,
+.pricing .row::before,
+.pricing .row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pricing h1 b{
+    font-size: 64px;
+}
+
+.pricing .row {
+    margin-top: 64px;
+    padding: 0 8px;
+}
+.pricing .row .row-section{
+    margin: 16px 0px;
+    padding: 0 8px;
+    float: left;
+    width: 100%;
+}
+
+
+@media (min-width: 601px){
+    .pricing .row .row-section{
+        width: 46.99%;
+    }
+}
+
+.pricing ul  {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.pricing ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing ul li h2{
+    opacity: 0.6;
+}
+
+.pricing .row .row-section ul li.padding-32{
+    color: #fff;
+    background-color: #616161;
+    padding: 32px 0;
+    font-size: 24px;
+}
+.pricing .row .row-section ul li.padding-32-1{
+    color: #fff;
+    background-color: #f44336!important;
+    padding: 32px 0;
+    font-size: 24px;
+}
+
+.pricing ul li button{
+    border-bottom: none;
+    color: #fff!important;
+    background-color: #000!important;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+
+/* Footer */
+
+footer {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    text-align: center;
+    padding: 0.01em 16px;
+}
+
+footer .footer-section{
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    font-size: 24px;
+}
+footer .p{
+    font-size: 15px;
+}
+footer .p a{
+    background-color: transparent;
+    opacity: 0.6;
+}
 
 
 
