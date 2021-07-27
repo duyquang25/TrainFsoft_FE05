@@ -1,5 +1,5 @@
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
+    box-sizing: border-box;
     background-color: rgba(204, 204, 204,0.3);
 }
 
@@ -128,12 +129,34 @@ header h6 span {
 
 .container-grid{
     display: grid;
+    box-sizing: border-box;
     padding: 8px 16px;
     grid-template-columns: 66.66% 33.33%;
 }
 
+
+
+
+
+
+/* @media (min-width: 993px){
+    .container-blog {
+    width: 66.66%!important;
+}}
+
+@media (min-width: 993px){
+    .blog-about {
+    width: 33.33%!important;
+}} */
+
 .container-blog{
     margin: 16px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.blog-about {
+    float: left;
 }
 
 .container-entry {
@@ -246,13 +269,13 @@ header h6 span {
 .posts,
 .advertise,
 .tags,
-.inspiration{
+.inspiration,
+.follow,
+.subscribe{
     margin : 16px;
 }
 
-.blog-about {
-    float: left;
-}
+
 
 
 .card img{
@@ -419,13 +442,114 @@ header h6 span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    background-color: #fff;
 }
 .inspiration .inspiration-content .col img{
-    width: 75%;
-    gap: 30px;
+    width: 100%;
+    gap: 10%;
 }
 
 
+.follow .follow-header {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.follow .follow-header h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.follow .follow-content::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.follow .follow-content {
+    padding: 16px 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+.follow .follow-content i {
+    font-size: 24px!important;
+}
+
+
+.subscribe .subscribe-header {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.subscribe .subscribe-header h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.subscribe .subscribe-content::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subscribe .subscribe-content {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+.subscribe .subscribe-content .content-main{
+    padding: 0.01em 16px;
+}
+
+.subscribe .subscribe-content input {
+    border: 1px solid #ccc;
+    overflow: visible;
+    padding: 8px;
+    display: block;
+}
+.subscribe .subscribe-content button {
+    color: #fff!important;
+    background-color: #f44336!important;
+    width : 100%;
+    padding: 8px;
+}
+
+
+/* Footer */
+
+footer{
+    color: #fff!important;
+    background-color: #616161!important;
+    padding: 32px;
+}
+
+footer a{
+    text-decoration: none;
+}
+footer a i{
+    margin: 8px 8px 8px 0;
+}
+
+footer> a {
+    color: #fff!important;
+    background-color: #000!important;
+    padding: 12px 24px 12px 8px;
+    margin-bottom: 16px;
+}
+
+footer p{
+    padding: 8px 0;
+}
+
+footer p a{
+    color: #fff;
+    cursor: pointer;
+}
 
 
 
