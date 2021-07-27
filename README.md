@@ -52,7 +52,18 @@
 - [CSS Sizing item P3](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A701%20(Sizing%20Item)/problem3/problem3.html)
  
 - [CSS Background P1](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A801/problem1/problem1.html)
-- [CSS Background P2](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A801/problem2/problem2.html)
+- [CSS Background P2](https://duyquang25.github.io/TrainFsoft_FE0520210726_Day3CSS/CSS-E.M.A801/problem2/problem2.html)
 
 - [CSS Styling Images](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1001/problem1/problem1.html)
 - [CSS Styling Images](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1001/problem2/problem2.html)
+
+-[CSS Styling text](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1201%20(Styling%20Text)/problem1/problem1.html)
+
+-[CSS Layout P1](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1301%20(CSS%20Layout)/problem1/problem1.html)
+-[CSS Layout P2](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1301%20(CSS%20Layout)/problem2/problem2.html)
+-[CSS Layout P3](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1301%20(CSS%20Layout)/problem3/problem3.html)
+
+-[CSS Blog](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1302%20(Blog)/index.html)
+-[CSS Landing page](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1302%20(Landing%20Page)/index.html)
+-[CSS House Design](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1304%20(House%20Design)/index.html)
+-[CSS BlTrevel Agency](https://duyquang25.github.io/TrainFsoft_FE05/20210726_Day3CSS/CSS-E.M.A1305%20(Travel%20Agency)/index.html)
