@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size:  1rem;
+    line-height: 1.5;
+}
+
+
+
+
+/*~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~ */
+
+.navbar .navbar-brand{
+    color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Header */
+
+#header{
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url(resources/images/bg-masthead.jpg) center/cover no-repeat;
+}
+
+#header::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(28, 55, 94, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#header form {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#header form .row div{
+    padding: 0 5px;
+}
+
+#header form .row .col-auto button{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+/* Section icon */
+
+.icon-list {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.icon-list .icon-item {
+    font-size: 5rem;
+}
+
+.icon-list h3{
+    font-weight: 700;
+}
+
+/* About */
+
+.about .about-img {
+    min-height: 20rem;
+}
+
+.about .about-content{
+    padding: 5rem;
+}
+.about .about-content h2{
+    font-weight: 700;
+}
+
+/* People talk */
+
+#people-talk{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#people-talk .people{
+    max-width: 18rem;
+}
+
+#people-talk .people img{
+    max-height: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+#people-talk .people h5{
+    font-weight: 700;
+}
+
+/* Contact */
+
+#contact{
+    position: relative;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    background: url(resources/images/bg-masthead.jpg) center/cover no-repeat;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(28, 55, 94, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contact h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#contact form {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#contact form .row div{
+    padding: 0 5px;
+}
+
+#contact form .row .col-auto button{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+/* footer */
+
+#footer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#footer i{
+    font-size: 1.5rem;
+}
+
+#footer .footer-content{
+    text-align: start;
+}
+
+#footer .footer-social{
+    text-align: end;
+}
