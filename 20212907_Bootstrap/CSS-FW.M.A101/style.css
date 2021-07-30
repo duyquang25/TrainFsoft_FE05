@@ -45,17 +45,16 @@ body{
 }
 
 #header form {
-    width: 70%;
-    margin-left: 15%;
+    width: 64%;
+    margin-left: 18%;
 }
 
 #header form .row div{
     padding: 0 5px;
 }
 
-#header form .row .col-auto button{
-    padding-right: 2rem;
-    padding-left: 2rem;
+#header form .row button{
+    width: 100%;
 }
 
 /* Section icon */
@@ -131,17 +130,16 @@ body{
 }
 
 #contact form {
-    width: 70%;
-    margin-left: 15%;
+    width: 64%;
+    margin-left: 18%;
 }
 
 #contact form .row div{
     padding: 0 5px;
 }
 
-#contact form .row .col-auto button{
-    padding-right: 2rem;
-    padding-left: 2rem;
+#contact form .row button{
+    width: 100%;
 }
 
 /* footer */
@@ -162,3 +160,22 @@ body{
 #footer .footer-social{
     text-align: end;
 }
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 768px) {
+    #header form,
+    #contact form {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #footer .footer-content,
+    #footer .footer-social{
+        text-align: center;
+    }
+    
+  }
+
