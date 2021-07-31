@@ -8,6 +8,7 @@ body{
     font-family: 'Lato', 'Catamaran', sans-serif;
     font-size:  1rem;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 /* Nav */
@@ -29,7 +30,7 @@ body{
 /* Header */
 
 #header {
-    background: url(resources/images/bg.PNG) center/cover no-repeat;
+    background: url(../resources/images/bg.PNG) center/cover no-repeat;
 }
 
 .header-container{
@@ -86,4 +87,17 @@ body{
 
 #footer{
     background-color: #000;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 576px){
+    #header .hd-heading{
+        font-size: 5rem;
+    }
+    
+    #header .hd-subheading{
+        font-size: 3.5rem;
+    }
 }
