@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial, sans-serif;
+}
+
+header .text-logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header .btn-outline-secondary:hover {
+    color: #fff!important;
+}
+
+.title h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.title p{
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.title a{
+    font-size: 1.25rem;
+}
+
+main .blog-item ul,
+main .blog-item ol{
+    padding-left: 2.5rem;
+}
+
+
+main .blog-item {
+    margin-bottom: 4rem;
+}
