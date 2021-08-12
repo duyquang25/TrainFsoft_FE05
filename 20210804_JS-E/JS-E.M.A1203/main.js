@@ -86,6 +86,138 @@ const myQuestions = [
         },
         multi: false,
         correctAnswer: 'c'
+    },
+    {
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
+    },
+    {
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
+    },
+    {
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
+    },
+    {
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
     }
 ];
 
@@ -140,39 +272,32 @@ const submitBtn = document.getElementById('submitBtn')
 const quiz_score = document.getElementById('quiz-score')
 
 let currentQuiz = 0
-let score = 0
+var listAnswer = [];
+
 
 loadQuiz()
 
 function loadQuiz() {
     deselectAnswers()
 
-    const currentQuizData = myQuestions[currentQuiz];
-
-
-    console.log( myQuestions[currentQuiz].answers.a)
-
-
-    questionEl.innerText = currentQuizData.question
-    a_text.innerText = "a. " + currentQuizData.answers.a 
-    b_text.innerText = "b. " + currentQuizData.answers.b
-    c_text.innerText = "c. " + currentQuizData.answers.c
-    d_text.innerText = "d. " + currentQuizData.answers.d
+    questionEl.innerText = myQuestions[currentQuiz].question
+    a_text.innerText = "a. " + myQuestions[currentQuiz].answers.a 
+    b_text.innerText = "b. " + myQuestions[currentQuiz].answers.b
+    c_text.innerText = "c. " + myQuestions[currentQuiz].answers.c
+    d_text.innerText = "d. " + myQuestions[currentQuiz].answers.d
 
     if(currentQuiz == 0){
         prevBtn.style.display = "none";
         submitBtn.style.display = "none";
-        reloadBtn.style.display = "none";
     } else if (currentQuiz == myQuestions.length-1){
-        prevBtn.style.display = "none";
+        prevBtn.style.display = "block";
         nextBtn.style.display = "none";
         submitBtn.style.display = "block";
-        reloadBtn.style.display = "block";
+        submitBtn.style.backgroundColor = "red"
     } else {
         prevBtn.style.display = "block";
         nextBtn.style.display = "block";
         submitBtn.style.display = "none";
-        reloadBtn.style.display = "none";
     }
 
 }
@@ -196,18 +321,24 @@ function getSelected() {
 
 nextBtn.addEventListener('click', () => {
     const answer = getSelected()
-    
-    if(answer) {
-        if(answer === myQuestions[currentQuiz].correctAnswer) {
-            score++
-        }
+
+    listAnswer[currentQuiz] = answer;
+        console.log(listAnswer[currentQuiz]);
 
         currentQuiz++
 
 
         loadQuiz()
+    // if(answer) {
+    //     listAnswer[currentQuiz] = answer;
+    //     console.log(listAnswer[currentQuiz]);
+
+    //     currentQuiz++
+
+
+    //     loadQuiz()
         
-    }
+    // }
 })
 
 prevBtn.addEventListener('click', () => {
@@ -218,30 +349,40 @@ prevBtn.addEventListener('click', () => {
 
     const answer = getSelected()
 
-    if(answer) {
-        if(answer === myQuestions[currentQuiz].correctAnswer) {
-            score++
-        }   
-        
-    }
+    listAnswer[currentQuiz] = answer;   
+    // if(answer) {
+    //     listAnswer[currentQuiz] = answer;         
+    // }
 })
 
 submitBtn.addEventListener('click', () => {
 
+    prevBtn.style.display = "none";
+    reloadBtn.style.display = "block";
+
 
     const answer = getSelected()
-
-    if(answer) {
-        if(answer === myQuestions[currentQuiz].correctAnswer) {
-            score++
-        }   
+    listAnswer[currentQuiz] = answer;  
+    // if(answer) {
+    //     listAnswer[currentQuiz] = answer;  
         
+    // }
+
+    let score = 0;
+
+    for (let i = 0; i < listAnswer.length; i++){
+        if(listAnswer[i] === myQuestions[i].correctAnswer){
+            score++;
+        }
     }
+
+    console.log(listAnswer)
     quiz_score.innerHTML = `
-                <h2>You answered ${score}/${myQuestions.length} questions correctly</h2>
+                <h3>You answered ${score}/${myQuestions.length} questions correctly</h3>
                 `
 })
 
 reloadBtn.addEventListener('click', () => {
     location.reload();
 })
+
