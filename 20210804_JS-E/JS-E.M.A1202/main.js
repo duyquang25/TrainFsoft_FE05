@@ -93,8 +93,6 @@ function myFunction(){
     console.log(check);
 
 
-
-
     if(check){
         
         img1.src = theImages[number1].src;
