@@ -5,10 +5,6 @@ let index = 0;
 // Task 1
 
 imgContainer = document.querySelector(".img-container");
-// console.log(imgContainer);
-// elem = imgContainer.createElement("img");
-// elem1 = document.querySelector(".img-container").appendChild(elem);
-// console.log(elem1);
 backBtn = document.querySelector(".back");
 nextBtn = document.querySelector(".next");
 
