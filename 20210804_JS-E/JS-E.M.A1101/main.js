@@ -25,7 +25,7 @@ nextBtn.addEventListener('click', function() {
 
   index++;
   if (index >= images.length) {
-    index = 0;
+    index = images.length - 1;
   }
   renderImage();
 });
