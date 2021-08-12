@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gradient( rgb(223, 171, 171))
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    margin: 50px 0;
+}
+
+
+button {
+    padding: 16px 32px;
+    background-color: rgb(140, 86, 228);
+    border: rgb(140, 86, 228);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 2rem;
+}
+button:hover {
+    background-color: rgb(94, 18, 218);
+    border: rgb(94, 18, 218);
+    cursor: pointer;
+}
