@@ -43,33 +43,33 @@ function checkInputs() {
 
 	// Kiểm tra input User
 	if(usernameValue === '') {
-		setErrorFor(username, 'Username is required');
+		checkError(username, 'Username is required');
 	} else {
-		setSuccessFor(username);
+		checkSuccess(username);
 	}
 	
 
 	// Kiểm tra password
 	if(passwordValue === '') {
-		setErrorFor(password, 'Password is required');
+		checkError(password, 'Password is required');
 	} else {
-		setSuccessFor(password);
+		checkSuccess(password);
 	}
 	
 
 	// Kiểm tra confirm password
 	if(cfpasswordValue === '') { 
-		setErrorFor(cfpassword, 'Confirm Password is required');
+		checkError(cfpassword, 'Confirm Password is required');
 	} else if(passwordValue !== cfpasswordValue) {
-		setErrorFor(cfpassword, 'Confirm Password does not match');
+		checkError(cfpassword, 'Confirm Password does not match');
 	} else{
-		setSuccessFor(cfpassword);
+		checkSuccess(cfpassword);
 	}
 }
 
 
 // Hàm xử lí khi lỗi và báo message
-function setErrorFor(input, message) {
+function checkError(input, message) {
 
 	check = false;
 
@@ -83,7 +83,7 @@ function setErrorFor(input, message) {
 
 
 // Hàm xử lí khi hợp lệ
-function setSuccessFor(input) {
+function checkSuccess(input) {
 
 	if(check) {
 		check = true;

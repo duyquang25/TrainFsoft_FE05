@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #924dad;
+	background-color: #5384df;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
@@ -18,7 +18,7 @@ body {
 .container {
 	background-color: #fff;
 	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
 	width: 400px;
 	max-width: 100%;
@@ -51,6 +51,7 @@ body {
 }
 
 .form-control label {
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: inline-block;
