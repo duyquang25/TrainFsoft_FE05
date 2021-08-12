@@ -66,51 +66,113 @@ var theImages = [
 ]
 
 
-const img1 = document.querySelector("#img1")
-const img2 = document.querySelector("#img2")
-const img3 = document.querySelector("#img3")
+// const img1 = document.querySelector("#img1")
+// const img2 = document.querySelector("#img2")
+// const img3 = document.querySelector("#img3")
 
-const btn = document.querySelector(".btn")
+// const btn = document.querySelector(".btn")
 
-// console.log(img1, img2, img3, btn);
-var number1
-var number2 
-var number3
-
-
-btn.addEventListener("click", myFunction) ; 
-
-function myFunction(){
-
-    number1 = Math.floor(Math.random() * theImages.length);  
-    number2 = Math.floor(Math.random() * theImages.length);  
-    number3 = Math.floor(Math.random() * theImages.length);  
-
-    check = (number1 !== number2) && (number2 !== number3) && (number3 !== number1);
+// // console.log(img1, img2, img3, btn);
+// var number1
+// var number2 
+// var number3
 
 
-    console.log(number1, number2, number3)
-    console.log(check);
+// btn.addEventListener("click", myFunction) ; 
+
+// function myFunction(){
+
+//     number1 = Math.floor(Math.random() * theImages.length);  
+//     number2 = Math.floor(Math.random() * theImages.length);  
+//     number3 = Math.floor(Math.random() * theImages.length);  
+
+//     check = (number1 !== number2) && (number2 !== number3) && (number3 !== number1);
 
 
-    if(check){
+//     console.log(number1, number2, number3)
+//     console.log(check);
+
+
+//     if(check){
         
-        img1.src = theImages[number1].src;
-        img1.width = theImages[number1].width;
-        img1.height = theImages[number1].height;
+//         img1.src = theImages[number1].src;
+//         img1.width = theImages[number1].width;
+//         img1.height = theImages[number1].height;
 
-        img2.src = theImages[number2].src;
-        img2.width = theImages[number2].width;
-        img2.height = theImages[number2].height;
+//         img2.src = theImages[number2].src;
+//         img2.width = theImages[number2].width;
+//         img2.height = theImages[number2].height;
 
-        img3.src = theImages[number3].src;
-        img3.width = theImages[number3].width;
-        img3.height = theImages[number3].height;
+//         img3.src = theImages[number3].src;
+//         img3.width = theImages[number3].width;
+//         img3.height = theImages[number3].height;
        
-    } else { 
-        myFunction();
-    }
+//     } else { 
+//         myFunction();
+//     }
     
+// }
+
+
+// const img1 = document.querySelector("#img1")
+// const img2 = document.querySelector("#img2")
+// const img3 = document.querySelector("#img3")
+
+
+const img = document.querySelector(".img");
+
+const btn = document.querySelector(".btn");
+
+function createArrayRandom(){
+
+    let orderNumbers = new Set();
+    for (let i = 1;  ;i++){
+        let random = Math.floor(Math.random() * theImages.length )  ;
+        orderNumbers.add(random);
+        
+        if (orderNumbers.size == theImages.length ){
+            break; 
+        }  
+    }
+
+    arrayRandomNumbers = [... orderNumbers ]
+    return arrayRandomNumbers;
 }
+
+    
+btn.onclick = () => {
+    arrayNumbers = [];
+    arrayNumbers = createArrayRandom();
+    img.innerHTML = `<img src="${theImages[arrayNumbers[0]].src}" width="${theImages[arrayNumbers[0]].width}" height="${theImages[arrayNumbers[0]].height}" alt="" >
+                     <img src="${theImages[arrayNumbers[1]].src}" width="${theImages[arrayNumbers[1]].width}" height="${theImages[arrayNumbers[1]].height}"  alt="" >
+                     <img src="${theImages[arrayNumbers[2]].src}" width="${theImages[arrayNumbers[2]].width}" height="${theImages[arrayNumbers[2]].height}"  alt="" >`
+}
+
+
+// btn.onclick = () => {
+//     let arrayNumbers;
+
+//     let orderNumbers = new Set();
+//     for (let i = 1;  ;i++){
+//         let random = Math.floor(Math.random() * theImages.length )  ;
+//         orderNumbers.add(random);
+        
+//         if (orderNumbers.size == theImages.length){
+//             break;
+//         }  
+//     }
+
+//     arrayNumbers = [... orderNumbers]
+
+//     console.log(arrayNumbers)
+
+//     img.innerHTML = `<img src="${theImages[arrayNumbers[0]].src}" width="${theImages[arrayNumbers[0]].width}" height="${theImages[arrayNumbers[0]].height}" alt="" >
+//                      <img src="${theImages[arrayNumbers[1]].src}" width="${theImages[arrayNumbers[1]].width}" height="${theImages[arrayNumbers[1]].height}"  alt="" >
+//                      <img src="${theImages[arrayNumbers[2]].src}" width="${theImages[arrayNumbers[2]].width}" height="${theImages[arrayNumbers[2]].height}"  alt="" >`
+// }
+
+
+
+
 
 
