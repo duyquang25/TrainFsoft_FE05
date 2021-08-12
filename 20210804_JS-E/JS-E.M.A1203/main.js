@@ -42,6 +42,50 @@ const myQuestions = [
         },
         multi: false,
         correctAnswer: 'c'
+    },
+    {
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
+    },
+    {
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
     }
 ];
 
@@ -74,7 +118,7 @@ const myQuestions = [
 //     },
 //     {
 //         question: "What year was JavaScript launched?",
-//         a: "1996",
+//         a: "996",
 //         b: "1995",
 //         c: "1994",
 //         d: "none of the above",
@@ -89,8 +133,11 @@ const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
+const reloadBtn = document.getElementById('reloadBtn')
 const prevBtn = document.getElementById('prevBtn')
 const nextBtn = document.getElementById('nextBtn')
+const submitBtn = document.getElementById('submitBtn')
+const quiz_score = document.getElementById('quiz-score')
 
 let currentQuiz = 0
 let score = 0
@@ -107,10 +154,27 @@ function loadQuiz() {
 
 
     questionEl.innerText = currentQuizData.question
-    a_text.innerText = currentQuizData.answers.a
-    b_text.innerText = currentQuizData.answers.b
-    c_text.innerText = currentQuizData.answers.c
-    d_text.innerText = currentQuizData.answers.d
+    a_text.innerText = "a. " + currentQuizData.answers.a 
+    b_text.innerText = "b. " + currentQuizData.answers.b
+    c_text.innerText = "c. " + currentQuizData.answers.c
+    d_text.innerText = "d. " + currentQuizData.answers.d
+
+    if(currentQuiz == 0){
+        prevBtn.style.display = "none";
+        submitBtn.style.display = "none";
+        reloadBtn.style.display = "none";
+    } else if (currentQuiz == myQuestions.length-1){
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "none";
+        submitBtn.style.display = "block";
+        reloadBtn.style.display = "block";
+    } else {
+        prevBtn.style.display = "block";
+        nextBtn.style.display = "block";
+        submitBtn.style.display = "none";
+        reloadBtn.style.display = "none";
+    }
+
 }
 
 function deselectAnswers() {
@@ -134,19 +198,50 @@ nextBtn.addEventListener('click', () => {
     const answer = getSelected()
     
     if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
+        if(answer === myQuestions[currentQuiz].correctAnswer) {
             score++
         }
 
         currentQuiz++
 
-        if(currentQuiz < quizData.length) {
-            loadQuiz()
-        } else {
-            quiz.innerHTML = `
-                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-                <button onclick="location.reload()">Reload</button>
-            `
-        }
+
+        loadQuiz()
+        
     }
+})
+
+prevBtn.addEventListener('click', () => {
+    
+    currentQuiz--
+
+    loadQuiz()
+
+    const answer = getSelected()
+
+    if(answer) {
+        if(answer === myQuestions[currentQuiz].correctAnswer) {
+            score++
+        }   
+        
+    }
+})
+
+submitBtn.addEventListener('click', () => {
+
+
+    const answer = getSelected()
+
+    if(answer) {
+        if(answer === myQuestions[currentQuiz].correctAnswer) {
+            score++
+        }   
+        
+    }
+    quiz_score.innerHTML = `
+                <h2>You answered ${score}/${myQuestions.length} questions correctly</h2>
+                `
+})
+
+reloadBtn.addEventListener('click', () => {
+    location.reload();
 })
