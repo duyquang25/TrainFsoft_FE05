@@ -31,6 +31,7 @@ body {
   background-color: rgb(243, 97, 97);
   text-align: center;
   font-weight: 700;
+  color: #fff;
   border-bottom: 4px solid #000
 }
 
@@ -88,9 +89,12 @@ button:focus {
 
 button#reloadBtn {
   display: none;
+  background-color: #49c059;
 }
 
 
 h3 {
+  height: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }

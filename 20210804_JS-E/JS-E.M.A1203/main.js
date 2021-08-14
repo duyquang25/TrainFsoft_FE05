@@ -222,42 +222,6 @@ const myQuestions = [
 ];
 
 
-
-// const quizData = [
-//     {
-//         question: "Which language runs in a web browser?",
-//         a: "Java",
-//         b: "C",
-//         c: "Python",
-//         d: "JavaScript",
-//         correct: "d",
-//     },
-//     {
-//         question: "What does CSS stand for?",
-//         a: "Central Style Sheets",
-//         b: "Cascading Style Sheets",
-//         c: "Cascading Simple Sheets",
-//         d: "Cars SUVs Sailboats",
-//         correct: "b",
-//     },
-//     {
-//         question: "What does HTML stand for?",
-//         a: "Hypertext Markup Language",
-//         b: "Hypertext Markdown Language",
-//         c: "Hyperloop Machine Language",
-//         d: "Helicopters Terminals Motorboats Lamborginis",
-//         correct: "a",
-//     },
-//     {
-//         question: "What year was JavaScript launched?",
-//         a: "996",
-//         b: "1995",
-//         c: "1994",
-//         d: "none of the above",
-//         correct: "b",
-//     },
-// ];
-
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -273,7 +237,6 @@ const quiz_score = document.getElementById('quiz-score')
 
 let currentQuiz = 0
 var listAnswer = [];
-
 
 loadQuiz()
 
@@ -307,38 +270,28 @@ function deselectAnswers() {
 }
 
 function getSelected() {
-    let answer
+    let answer;
 
     answerEls.forEach(answerEl => {
         if(answerEl.checked) {
-            console.log(answerEl)
-            answer = answerEl.id
+            answer = answerEl.id;
         }
     })
 
     return answer
 }
 
+
+
 nextBtn.addEventListener('click', () => {
     const answer = getSelected()
 
     listAnswer[currentQuiz] = answer;
-        console.log(listAnswer[currentQuiz]);
 
-        currentQuiz++
-
-
-        loadQuiz()
-    // if(answer) {
-    //     listAnswer[currentQuiz] = answer;
-    //     console.log(listAnswer[currentQuiz]);
-
-    //     currentQuiz++
+    currentQuiz++
 
 
-    //     loadQuiz()
-        
-    // }
+    loadQuiz()
 })
 
 prevBtn.addEventListener('click', () => {
@@ -350,9 +303,7 @@ prevBtn.addEventListener('click', () => {
     const answer = getSelected()
 
     listAnswer[currentQuiz] = answer;   
-    // if(answer) {
-    //     listAnswer[currentQuiz] = answer;         
-    // }
+    
 })
 
 submitBtn.addEventListener('click', () => {
@@ -363,10 +314,6 @@ submitBtn.addEventListener('click', () => {
 
     const answer = getSelected()
     listAnswer[currentQuiz] = answer;  
-    // if(answer) {
-    //     listAnswer[currentQuiz] = answer;  
-        
-    // }
 
     let score = 0;
 
@@ -376,9 +323,8 @@ submitBtn.addEventListener('click', () => {
         }
     }
 
-    console.log(listAnswer)
     quiz_score.innerHTML = `
-                <h3>You answered ${score}/${myQuestions.length} questions correctly</h3>
+                <h3>You answered ${score} of ${myQuestions.length} questions correctly</h3>
                 `
 })
 
