@@ -1,100 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
+*{
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+    font-family: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gradient( rgb(223, 171, 171))
 }
 
-.quiz-container {
-  box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-  width: 600px;
-  overflow: hidden;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.quiz-header {
-  padding: 10px;
-  background-color: rgb(243, 97, 97);
-  text-align: center;
-  font-weight: 700;
-  color: #fff;
-  border-bottom: 4px solid #000
-}
-
-.quiz-content {
-  padding: 2rem;
-}
-
-.quiz-content h2 {
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
-  height: 140px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-ul li label {
-  cursor: pointer;
+.img {
+    margin: 50px 0;
 }
 
 
-.quiz-footer {
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-}
 button {
-  background-color: #8e44ad;
-  color: #fff;
-  border: none;
-  width: 200px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-family: inherit;
-  padding: 1.3rem;
-  border-radius: 999px;
+    padding: 16px 32px;
+    background-color: rgb(140, 86, 228);
+    border: rgb(140, 86, 228);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 2rem;
 }
-
 button:hover {
-  background-color: #732d91;
-}
-
-button:focus {
-  outline: none;
-  background-color: #5e3370;
-}
-
-button#reloadBtn {
-  display: none;
-  background-color: #49c059;
-}
-
-
-h3 {
-  height: 30px;
-  margin-bottom: 10px;
-  text-align: center;
+    background-color: rgb(94, 18, 218);
+    border: rgb(94, 18, 218);
+    cursor: pointer;
 }

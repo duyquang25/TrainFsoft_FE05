@@ -1,178 +1,334 @@
-// var theImages = [
-//     {
-//     src: "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
-//     width: "300",
-//     height: "300",
-//     },
-//     {
-//     src: "https://i.picsum.photos/id/1001/5616/3744.jpg?hmac=38lkvX7tHXmlNbI0HzZbtkJ6_wpWyqvkX4Ty6vYElZE",
-//     width: "300",
-//     height: "300",
-//     },
-//     {
-//     src: "https://i.picsum.photos/id/1010/5184/3456.jpg?hmac=7SE0MNAloXpJXDxio2nvoshUx9roGIJ_5pZej6qdxXs",
-//     width: "300",
-//     height: "300",
-//     },
-//     {
-//     src: "https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY",
-//     width: "300",
-//     height: "300",
-//     },
-//     {
-//     src: "https://i.picsum.photos/id/100/2500/1656.jpg?hmac=gWyN-7ZB32rkAjMhKXQgdHOIBRHyTSgzuOK6U0vXb1w",
-//     width: "300",
-//     height: "300",
-//     },
-//     {
-//     src: "https://i.picsum.photos/id/102/4320/3240.jpg?hmac=ico2KysoswVG8E8r550V_afIWN963F6ygTVrqHeHeRc",
-//     width: "300",
-//     height: "300",
-//     },
-// ]
-
-
-var theImages = [
+const myQuestions = [
     {
-    src: "img/img-0.jpg",
-    width: "300",
-    height: "300",
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
     },
     {
-    src: "img/img-1.jpg",
-    width: "300",
-    height: "300",
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
     },
     {
-    src: "img/img-2.jpg",
-    width: "300",
-    height: "300",
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
     },
     {
-    src: "img/img-3.jpg",
-    width: "300",
-    height: "300",
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
     },
     {
-    src: "img/img-4.jpg",
-    width: "300",
-    height: "300",
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
     },
     {
-    src: "img/img-5.jpg",
-    width: "300",
-    height: "300",
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
     },
-]
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
+    },
+    {
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
+    },
+    {
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Javascript is _________ language.',
+        answers: { 
+        a: 'Programming', 
+        b: 'Application',
+        c: 'None of These',
+        d: 'Scripting'
+        },
+        multi: false,
+        correctAnswer: 'd'
+    },
+    {
+        question:'Which of the following is a valid type of function javascript supports?',
+        answers: {
+            a: 'named function',
+            b: 'anonymous function',
+            c: 'both of the above',
+            d: 'none of the above'
+            },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
+        answers: {
+            a: 'getIndex()',
+            b: 'location()',
+            c: 'indexOf()',
+            d: 'getLocation()'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    },
+    {
+        question: 'Which one of the following is valid data type of JavaScript',
+        answers: {
+            a: 'number',
+            b: 'void',
+            c: 'boolean',
+            d: 'nothing'
+        },
+        multi: false,
+        correctAnswer: 'c'
+    }
+];
 
 
-// const img1 = document.querySelector("#img1")
-// const img2 = document.querySelector("#img2")
-// const img3 = document.querySelector("#img3")
+const quiz = document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const reloadBtn = document.getElementById('reloadBtn')
+const prevBtn = document.getElementById('prevBtn')
+const nextBtn = document.getElementById('nextBtn')
+const submitBtn = document.getElementById('submitBtn')
+const quiz_score = document.getElementById('quiz-score')
 
-// const btn = document.querySelector(".btn")
+let currentQuiz = 0
+var listAnswer = [];
 
-// // console.log(img1, img2, img3, btn);
-// var number1
-// var number2 
-// var number3
+loadQuiz()
 
+function loadQuiz() {
+    deselectAnswers()
 
-// btn.addEventListener("click", myFunction) ; 
+    questionEl.innerText = myQuestions[currentQuiz].question
+    a_text.innerText = "a. " + myQuestions[currentQuiz].answers.a 
+    b_text.innerText = "b. " + myQuestions[currentQuiz].answers.b
+    c_text.innerText = "c. " + myQuestions[currentQuiz].answers.c
+    d_text.innerText = "d. " + myQuestions[currentQuiz].answers.d
 
-// function myFunction(){
-
-//     number1 = Math.floor(Math.random() * theImages.length);  
-//     number2 = Math.floor(Math.random() * theImages.length);  
-//     number3 = Math.floor(Math.random() * theImages.length);  
-
-//     check = (number1 !== number2) && (number2 !== number3) && (number3 !== number1);
-
-
-//     console.log(number1, number2, number3)
-//     console.log(check);
-
-
-//     if(check){
-        
-//         img1.src = theImages[number1].src;
-//         img1.width = theImages[number1].width;
-//         img1.height = theImages[number1].height;
-
-//         img2.src = theImages[number2].src;
-//         img2.width = theImages[number2].width;
-//         img2.height = theImages[number2].height;
-
-//         img3.src = theImages[number3].src;
-//         img3.width = theImages[number3].width;
-//         img3.height = theImages[number3].height;
-       
-//     } else { 
-//         myFunction();
-//     }
-    
-// }
-
-
-// const img1 = document.querySelector("#img1")
-// const img2 = document.querySelector("#img2")
-// const img3 = document.querySelector("#img3")
-
-
-const img = document.querySelector(".img");
-
-const btn = document.querySelector(".btn");
-
-function createArrayRandom(){
-
-    let orderNumbers = new Set();
-    for (let i = 1;  ;i++){
-        let random = Math.floor(Math.random() * theImages.length )  ;
-        orderNumbers.add(random);
-        
-        if (orderNumbers.size == theImages.length ){
-            break; 
-        }  
+    if(currentQuiz == 0){
+        prevBtn.style.display = "none";
+        submitBtn.style.display = "none";
+    } else if (currentQuiz == myQuestions.length-1){
+        prevBtn.style.display = "block";
+        nextBtn.style.display = "none";
+        submitBtn.style.display = "block";
+        submitBtn.style.backgroundColor = "red"
+    } else {
+        prevBtn.style.display = "block";
+        nextBtn.style.display = "block";
+        submitBtn.style.display = "none";
     }
 
-    arrayRandomNumbers = [... orderNumbers ]
-    return arrayRandomNumbers;
 }
 
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer;
+
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id;
+        }
+    })
+
+    return answer
+}
+
+
+
+nextBtn.addEventListener('click', () => {
+    const answer = getSelected()
+
+    listAnswer[currentQuiz] = answer;
+
+    currentQuiz++
+
+
+    loadQuiz()
+})
+
+prevBtn.addEventListener('click', () => {
     
-btn.onclick = () => {
-    arrayNumbers = [];
-    arrayNumbers = createArrayRandom();
-    img.innerHTML = `<img src="${theImages[arrayNumbers[0]].src}" width="${theImages[arrayNumbers[0]].width}" height="${theImages[arrayNumbers[0]].height}" alt="" >
-                     <img src="${theImages[arrayNumbers[1]].src}" width="${theImages[arrayNumbers[1]].width}" height="${theImages[arrayNumbers[1]].height}"  alt="" >
-                     <img src="${theImages[arrayNumbers[2]].src}" width="${theImages[arrayNumbers[2]].width}" height="${theImages[arrayNumbers[2]].height}"  alt="" >`
-}
+    currentQuiz--
+
+    loadQuiz()
+
+    const answer = getSelected()
+
+    listAnswer[currentQuiz] = answer;   
+    
+})
+
+submitBtn.addEventListener('click', () => {
+
+    prevBtn.style.display = "none";
+    reloadBtn.style.display = "block";
 
 
-// btn.onclick = () => {
-//     let arrayNumbers;
+    const answer = getSelected()
+    listAnswer[currentQuiz] = answer;  
 
-//     let orderNumbers = new Set();
-//     for (let i = 1;  ;i++){
-//         let random = Math.floor(Math.random() * theImages.length )  ;
-//         orderNumbers.add(random);
-        
-//         if (orderNumbers.size == theImages.length){
-//             break;
-//         }  
-//     }
+    let score = 0;
 
-//     arrayNumbers = [... orderNumbers]
+    for (let i = 0; i < listAnswer.length; i++){
+        if(listAnswer[i] === myQuestions[i].correctAnswer){
+            score++;
+        }
+    }
 
-//     console.log(arrayNumbers)
+    quiz_score.innerHTML = `
+                <h3>You answered ${score} of ${myQuestions.length} questions correctly</h3>
+                `
+})
 
-//     img.innerHTML = `<img src="${theImages[arrayNumbers[0]].src}" width="${theImages[arrayNumbers[0]].width}" height="${theImages[arrayNumbers[0]].height}" alt="" >
-//                      <img src="${theImages[arrayNumbers[1]].src}" width="${theImages[arrayNumbers[1]].width}" height="${theImages[arrayNumbers[1]].height}"  alt="" >
-//                      <img src="${theImages[arrayNumbers[2]].src}" width="${theImages[arrayNumbers[2]].width}" height="${theImages[arrayNumbers[2]].height}"  alt="" >`
-// }
-
-
-
-
-
+reloadBtn.addEventListener('click', () => {
+    location.reload();
+})
 

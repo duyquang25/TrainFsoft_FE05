@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Quiz App</title>
-  </head>
-  <body>
-    <div class="quiz-container" id="quiz">
-
-      <div class="quiz-header">
-        <h1>Quiz App</h1>
-      </div>
-
-
-
-      <div class="quiz-content">
-        <h2 id="question">Question text</h2>
-        <ul>
-          <li>
-            <input type="radio" name="answer" id="a" class="answer">
-            <label for="a" id="a_text">Answer text</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="b" class="answer">
-            <label for="b" id="b_text">Answer text</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="c" class="answer">
-            <label for="c" id="c_text">Answer text</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="d" class="answer">
-            <label for="d" id="d_text">Answer text</label>
-          </li>
-        </ul>
-      </div>
-
-      <div class="quiz-footer">
-        <button id="reloadBtn">Reload</button>
-        <button id="prevBtn">Prev</button>
-        <button id="nextBtn">Next</button>
-        <button id="submitBtn">Submit</button>
-      </div> 
-
-      <div id="quiz-score">
-        <h3></h3>
-      </div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Images Randomize</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Images Random</h1>
+        <div class="img">
+            <img src="" alt="" >
+            <img src="" alt="" >
+            <img src="" alt="" >
+        </div>
+        <button class="btn">Generate</button>
     </div>
+
+
+
+
+
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
