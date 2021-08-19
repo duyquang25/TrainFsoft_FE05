@@ -34,8 +34,12 @@ var defaults = {
 // YOUR CODE HERE
 
 
+var abc = {...defaults}
 
-function response(...defaults, ...cb) {
+console.log(abc)
+
+
+function response(...defaults) {
     check(); // true
 }
     
