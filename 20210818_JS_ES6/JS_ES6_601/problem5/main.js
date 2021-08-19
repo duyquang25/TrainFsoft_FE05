@@ -11,9 +11,7 @@
 
 
 function upper(strings, ...values) {
-    // console.log(strings)
-    // console.log(values)
-
+    
     let str = '';
     strings.forEach((string, i) => {
        
@@ -21,11 +19,8 @@ function upper(strings, ...values) {
         
         str += string + values[i];
 
-        // console.log( string)
-        // console.log( values[i])
     });
 
-    // console.log(str)
     return str;
 }
 
@@ -38,7 +33,3 @@ console.log(
 upper`Hello ${name} (@${account}), welcome to the ${classname}!!!` ===
 'Hello NGUYEN VAN A (@ANV), welcome to the FRESHER FRONTEND!!!'
 );
-
-
-// var html = upper`Hello ${name} (@${account}), welcome to the ${classname}!!!`;
-// console.log(html);
