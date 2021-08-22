@@ -8,16 +8,8 @@ function fibonaci(n){
     return map.get(n);
 }
 
-console.log(fibonaci(0))
-console.log(fibonaci(1))
-console.log(fibonaci(2))
-console.log(fibonaci(3))
-console.log(fibonaci(4))
-console.log(fibonaci(5))
-console.log(fibonaci(6))
-console.log(fibonaci(7))
-console.log(fibonaci(8))
-console.log(fibonaci(9))
-console.log(fibonaci(10))
-console.log(fibonaci(11))
-console.log(fibonaci(12))
+var test = 20;
+
+for (let i = 0; i < test; i++){
+    console.log(fibonaci(i));
+}
