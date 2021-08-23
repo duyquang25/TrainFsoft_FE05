@@ -42,7 +42,7 @@
 // })();
 
 
-(function IIFE() {
+(() => {
     foo = (x) => {
       var y = x * 2;
   
