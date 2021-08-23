@@ -9,6 +9,7 @@ function ajax(url, cb) {
     });
 }
 
+
 function check(data) {
     console.log(
         56 ===
@@ -30,17 +31,15 @@ var defaults = {
         qam: 14
     }
 };
+
     
 // YOUR CODE HERE
 
+function response() {
 
-var abc = {...defaults}
-
-console.log(abc)
-
-
-function response(...defaults) {
-    check(); // true
+    const data = {...defaults,...arguments[0]};
+    data.bam = {...defaults.bam,...arguments[0].bam}
+    check(data); // true 
 }
     
 // DO NOT MODIFY
