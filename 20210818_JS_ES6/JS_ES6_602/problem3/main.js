@@ -21,22 +21,24 @@ let arrayMembers = [
   },
 ];
 
-// var [ a, b , c , d] = arrayMembers;
 
-// let members = [ ...new Set([a, b, c, d])]
-
-// console.log(members);
-
-// let filteredList = [
-//     ...new Map(arrayMembers.map(obj => [`${obj.id}:${obj.name}`, obj]))
-//     .values()
-//   ];
-
-//   console.log(filteredList)
-
-let filterArrayMember = arrayMembers.reduce((a, c) => {
-  !a.find((v) => v.id === c.id) && a.push(c);
+let filterArrayMember = arrayMembers.reduce((a, b) => {
+  !a.find((c) => c.id === b.id) && a.push(b);
   return a;
 }, []);
 
 console.log(filterArrayMember);
+
+
+
+// Su dung Set
+const set = new Set();
+
+const filterArrayMember1 = arrayMembers.filter(member => {
+  if(set.has(member.id)) 
+    return 0;
+  set.add(member.id);
+  return 1;
+})
+
+console.log(filterArrayMember1)
