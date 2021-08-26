@@ -10,6 +10,10 @@ body {
   -webkit-tap-highlight-color: #fed136;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Nav */
 
 .nav .container .navbar-brand {
@@ -30,6 +34,7 @@ body {
 /* Header */
 
 #header {
+  transition: all .3s;
   background: url(header-bg.jpg) center/cover no-repeat;
 }
 
@@ -65,6 +70,7 @@ body {
 /* Services */
 
 #services {
+  transition: all .3s;
   padding: 10rem 0rem 5rem 0rem;
 }
 #services .title h1 {
@@ -119,6 +125,7 @@ body {
 /* PORTFOLIO */
 
 #portfolio {
+  transition: all .3s;
   background-color: #f8f9fa;
   padding: 5rem 0rem 10rem 0rem;
 }
@@ -149,9 +156,21 @@ body {
   line-height: 1.75;
 }
 
+#portfolio .row img{
+  transition: all 0.2s;
+}
+
+#portfolio .row img:hover{
+  border: 4px solid #fed136;
+  opacity: 0.7;
+  transform: rotate(3deg);
+  cursor: pointer;
+}
+
 /* About */
 
 #about {
+  transition: all .3s;
   padding: 5rem 0rem 10rem 0rem;
 }
 
@@ -168,7 +187,27 @@ body {
   padding-bottom: 4.5rem;
 }
 
+#about .row img {
+  transition: all .2s ease-in-out;
+}
+#about .row img:hover {
+  transform: scale(1.2);
+  border: 5px solid #ccc;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*  Timeline */
+
 .timeline {
+  transition: all .3s;
   position: relative;
   padding: 0;
   list-style: none;
@@ -378,6 +417,7 @@ line-height: 1.75;
 /* Team */
 
 #team {
+  transition: all .3s;
     background-color: #f8f9fa;
     padding: 5rem 0rem 5rem 0rem;
 }
@@ -436,6 +476,7 @@ line-height: 1.75;
 /* Contact */
 
 #contact {
+  transition: all .3s;
     background: url('https://source.unsplash.com/Q1p7bh3SHj8') center/cover no-repeat;
     padding: 10rem 0;
 }
@@ -515,8 +556,18 @@ line-height: 1.75;
     background-color: #222;
 }
 
+
+#footer ul li i:hover{
+  opacity: 0.7;
+}
+
 #footer .row ul.faq{
     text-transform: uppercase;
     font-size: 90%;
     font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+::selection{
+  background-color: rgb(196, 250, 46);
+  color: #fff;
 }
